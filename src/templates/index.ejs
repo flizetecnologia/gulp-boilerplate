@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+
+	<meta charset="UTF-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge" />
+
+	<meta name="robots" content="noindex,nofollow" />
+	<meta name="revisit-after" content="7 days" />
+	<meta name="author" content="#FlizeTeam" />
+	<meta name="description" content="<%- utils.description %>" />
+	<meta name="viewport" content="width=device-width, minimumscale=1.0, maximum-scale=1.0" />
+	<!--<meta name="google-site-verification" content="XXX" />-->
+
+	<meta itemprop="name" content="<%- utils.title %>" />
+	<meta itemprop="description" content="<%- utils.description %>" />
+	<meta itemprop="image" content="<%- utils.cover %>" />
+
+	<meta property="og:type" content="website" />
+	<meta property="og:locale" content="pt_BR" />
+	<meta property="og:url" content="<%- utils.url %>" />
+	<meta property="og:title" content="<%- utils.title %>" />
+	<meta property="og:site_name" content="<%- utils.title %>" />
+	<meta property="og:description" content="<%- utils.description %>" />
+	<meta property="og:image" content="<%- utils.cover %>" />
+	<meta property="og:image:type" content="image/jpeg" />
+	<meta property="og:image:width" content="880" />
+	<meta property="og:image:height" content="660" />
+
+	<meta name="application-name" content="<%- utils.title %>" />
+	<meta name="msapplication-TileColor" content="#CCC" />
+	<meta name="msapplication-square150x150logo" content="<%- utils.cover %>" />
+	<meta name="theme-color" content="#CCC" />
+
+	<link rel="shortcut icon" href="<%- utils.images %>/favicon.png" />
+	<link rel="stylesheet" href="<%- utils.url %>/assets/css/main.css">
+
+	<link rel="author" href="<%- utils.url %>/humans.txt" />
+
+	<title><%- utils.title %></title>
+
+</head>
+
+<body>
+
+	<%- include('includes/_menu.ejs', {utils: utils}); %>
+
+	<%- include('includes/_home.ejs', {utils: utils}); %>
+
+	<%- include('includes/_footer.ejs', {utils: utils}); %>
+
+	<script type="text/javascript" src="<%- utils.url %>/assets/js/main.js"></script>
+
+</body>
+</html>

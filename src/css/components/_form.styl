@@ -1,0 +1,59 @@
+
+.form
+  size 100% false
+  +above(6)
+    size 80% false
+
+.form__group
+  padding 0px 0px 10px 0px
+
+.form__input, .form__textarea
+  size 100%
+  color grayb-color
+  padding 6px
+  font-family 'Open Sans', sans-serif
+  font-size basic-font-size
+  border 2px solid transparent
+  &:focus
+    border 2px solid blue-color
+    color blue-color
+
+.form__textarea
+  size false 200px
+
+.form__submit
+  display inline-block
+  background #FFF
+  color sky-color
+  text-transform uppercase
+  font-size 14px
+  padding 10px 20px
+  transition all 0.2s ease-in
+  border 2px solid transparent
+  &:hover
+    border 2px solid blue-color
+    color blue-color
+
+.form__submit--sending
+  background orange
+  color white
+  cursor progress !important
+  &:hover
+    border 2px solid white
+    color white
+
+.form__submit--error
+  background red
+  color white
+  cursor not-allowed !important
+  &:hover
+    border 2px solid white
+    color white
+
+.form__submit--success
+  background green
+  color white
+  cursor not-allowed !important
+  &:hover
+    border 2px solid white
+    color white

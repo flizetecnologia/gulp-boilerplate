@@ -1,0 +1,23 @@
+@import "kouto-swiss"
+
+// automatic uses color-fallback() function - http://kouto-swiss.io/docs.html#color-fallback
+ks-color-fallback-enabled = true
+
+@import "jeet"
+
+@import "../../../node_modules/font-awesome/css/font-awesome.min.css"
+
+normalize()
+box-sizing-reset()
+
+//edit()
+
+@import "./config/_variables"
+@import "./config/_mixins"
+@import "./config/_fonts"
+@import "./config/_utils"
+@import "./config/_resets"
+
+@import "./components/*"
+
+@import "./pages/*"

@@ -1,0 +1,46 @@
+
+.menu
+  col(12/16)
+
+.menu__collapse
+  +below(11)
+    float right
+    display inline-block
+    font-size 40px
+    color main-color
+    padding-top 5px
+    cursor pointer
+  +above(12)
+    display none
+
+.menu__nav
+  +below(11)
+    absolute 60px false false 0px
+    z-index 9999
+    width 100%
+    background main-color
+    display none
+  +above(12)
+    padding 23px 0px 0px 0px
+    float right
+    display block
+
+.menu__anchor
+  alink()
+  text-align center
+  font-size 16px
+  font-weight bold
+  +below(11)
+    display inline-block
+    width 100%
+    padding 15px 0px
+    color #FFF
+    &.menu__anchor--active
+      color main-color
+  +above(12)
+    color main-color
+    margin 0px 0px 0px 30px
+    transition all 0.1s linear 0s
+    position relative
+    &:hover
+      color secondary-color

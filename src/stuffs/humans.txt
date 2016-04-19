@@ -1,0 +1,27 @@
+
+/* OUR COMPANY */
+
+  Name: Flize Tecnologia / Flize Technology
+  Website: http://flize.com.br / http://flize.technology
+  E-mail: welcome@flize.com.br
+  From: Ponta Grossa, Parana, Brazil
+
+
+/* PROJECT TEAM */
+
+  Name: Jefferson Mexkiv
+  Role: Founder, Software Developer
+  Twitter: @mexkiv
+  From: Ponta Grossa, Parana, Brazil
+
+  Name: Victor Barao Nunes
+  Role: Software Developer
+  Twitter: @vitorbaraonunes
+  From: Ponta Grossa, Parana, Brazil
+
+/* SITE */
+
+  Last update: 04/2016
+  Language: Portuguese / English
+  Doctype: HTML5
+  Components: HTML5/CSS3/Gulp

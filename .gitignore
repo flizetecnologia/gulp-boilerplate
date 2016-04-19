@@ -1,0 +1,7 @@
+# Dependencies #
+node_modules/
+src/stuffs/PHPMailer/
+dist/
+
+# Garbages #
+.DS_Store

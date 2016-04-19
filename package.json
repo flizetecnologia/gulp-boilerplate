@@ -1,0 +1,32 @@
+{
+  "name": "gulp-boilerplate",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "gulp server"
+  },
+  "author": "Flize Team",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/flizeteam/gulp-boilerplate"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "autoprefixer-stylus": "^0.8.0",
+    "font-awesome": "^4.5.0",
+    "gulp": "^3.9.0",
+    "gulp-concat": "^2.6.0",
+    "gulp-concat-css": "^2.2.0",
+    "gulp-connect": "^2.2.0",
+    "gulp-ejs": "^1.2.1",
+    "gulp-imagemin": "^2.3.0",
+    "gulp-sourcemaps": "^1.6.0",
+    "gulp-stylus": "^2.1.0",
+    "gulp-uglifyjs": "^0.6.2",
+    "gulp-util": "^3.0.7",
+    "jeet": "^6.1.2",
+    "jquery": "^2.1.4",
+    "kouto-swiss": "^0.11.13",
+    "rupture": "^0.6.1",
+    "vinyl-ftp": "^0.4.5"
+  }
+}
