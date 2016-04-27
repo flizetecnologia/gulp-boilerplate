@@ -28,5 +28,8 @@
     "kouto-swiss": "^0.11.13",
     "rupture": "^0.6.1",
     "vinyl-ftp": "^0.4.5"
+  },
+  "dependencies": {
+    "jquery-cycle2": "git+https://github.com/malsup/cycle2.git"
   }
 }

@@ -40,6 +40,7 @@ var scripts = [
   , src + '/js/form.js'
   , src + '/js/gmaps.js'
   , src + '/js/onload.js'
+  , './node_modules/jquery-cycle2/build/jquery.cycle2.min.js'
 
 ];
 

@@ -1,14 +1,73 @@
 // header component
 
 .header
-  size 100% auto
+  size 100% 60px
+  position fixed
+  background-color rgba(0, 0, 0, .4)
+  border-bottom 1px solid rgba(255, 255, 255, .6)
+  z-index 200
 
 .logo
   col(4/16)
-  
+  color white
+
 .logo__title
 	padding-top 10px
 
 .footer
   size 100% auto
   text-align center
+
+.color--main
+  background-color main-color
+
+.color--white
+  background-color white
+
+.content
+  margin 0 auto
+  width 100%
+  +above(10)
+    width 80%
+
+.page__title
+  font-size 50px
+  font-weight 200
+  margin 0 auto
+  text-align center
+  color main-color
+
+.page
+  padding 20px 0
+  +above(6)
+    padding 80px 0
+.page--main-color
+  background rgba(0,173,238,0.8)
+
+.block__title
+  font-size 30px
+  text-align center
+  padding-bottom 10px
+  font-weight 200
+
+.block__description
+  text-align center
+  font-size 18px
+  font-weight 200
+  color secondary-font-color
+
+.block__icon
+  color main-color
+  font-size 40px
+  width 100%
+  text-align center
+  padding 10px
+
+.title--white
+  color white
+  padding-bottom 20px
+  +above(6)
+    padding-bottom 80px
+
+.footer
+  background-color black

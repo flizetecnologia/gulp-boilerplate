@@ -7,7 +7,7 @@
     float right
     display inline-block
     font-size 40px
-    color main-color
+    color white
     padding-top 5px
     cursor pointer
   +above(12)
@@ -22,8 +22,8 @@
     display none
   +above(12)
     padding 23px 0px 0px 0px
-    float right
     display block
+    float right
 
 .menu__anchor
   alink()
@@ -34,13 +34,15 @@
     display inline-block
     width 100%
     padding 15px 0px
-    color #FFF
+    color white
     &.menu__anchor--active
-      color main-color
+      color white
+    &:hover
+      background-color darken(main-color, 10)
   +above(12)
-    color main-color
+    color white
     margin 0px 0px 0px 30px
     transition all 0.1s linear 0s
     position relative
     &:hover
-      color secondary-color
+      color main-color
