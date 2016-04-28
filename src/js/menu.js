@@ -15,6 +15,17 @@
 		}
 	});
 
+  jQuery(document).on('click', '.menu__anchor', function(){
+
+        if(window.innerWidth < 1024) {
+          jQuery('.menu__nav').slideUp();
+          jQuery('.menu__collapse--js').removeClass('isOpen');
+        }
+
+
+    });
+
+
 	jQuery(window).resize(function(){
 			if(window.innerWidth > 1024) {
 				jQuery('.menu__nav').show();

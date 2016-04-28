@@ -2,21 +2,20 @@
   background-color white
 
 .slide__img
-  width 100%
-  min-height 80vh
+  col(1/2)
+  height 100px
   background-size cover
-  +above(6)
-    min-height 60vh
+  border 4px solid white
+  transition opacity 2s
   +above(8)
-    border 20px solid white
-    border-radius 50px
+    col(1/4)
+    height 200px
+  &:hover
+    opacity 0.5
+
 .page--gallery
   padding-bottom 0
-
-.gallery__block
-  width 100%
-  +above(8)
-    col(1/2, cycle: 2)
+  min-height 100vh
 
 .gallery__description
   text-align center
@@ -30,5 +29,10 @@
     margin-right 20px
     font-size 36px
 
-.cycle-slide
-  width 100%
+.gallery--content
+  min-height 80vh
+  +above(6)
+    padding 20px
+
+.malonebox
+  ablock()

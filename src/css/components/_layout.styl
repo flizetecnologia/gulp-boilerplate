@@ -5,18 +5,26 @@
   position fixed
   background-color rgba(0, 0, 0, .4)
   border-bottom 1px solid rgba(255, 255, 255, .6)
-  z-index 200
+  z-index 1000
 
 .logo
   col(4/16)
   color white
 
 .logo__title
-	padding-top 10px
+  margin-top 4px
+  background url('../img/logo-main.png')
+  size 155px 50px
+
+.logo__anchor
+  ablock()
 
 .footer
   size 100% auto
   text-align center
+.footer__box
+  color white
+  padding-top 2px
 
 .color--main
   background-color main-color
@@ -30,6 +38,10 @@
   +above(10)
     width 80%
 
+.content--cf
+  +above(6)
+    cf();
+
 .page__title
   font-size 50px
   font-weight 200
@@ -42,7 +54,7 @@
   +above(6)
     padding 80px 0
 .page--main-color
-  background rgba(0,173,238,0.8)
+  background rgba-main-color
 
 .block__title
   font-size 30px

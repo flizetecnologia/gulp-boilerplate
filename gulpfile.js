@@ -35,6 +35,7 @@ var src = './src'
 
 var scripts = [
   './node_modules/jquery/dist/jquery.min.js'
+  , './node_modules/malonebox/dist/js/malonebox.min.js'
   , src + '/js/onscroll.js'
   , src + '/js/menu.js'
   , src + '/js/form.js'
