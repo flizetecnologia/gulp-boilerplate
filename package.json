@@ -25,11 +25,10 @@
     "gulp-util": "^3.0.7",
     "jeet": "^6.1.2",
     "jquery": "^2.1.4",
+    "jquery-cycle2": "git+https://github.com/malsup/cycle2.git",
     "kouto-swiss": "^0.11.13",
+    "malonebox": "^0.1.3",
     "rupture": "^0.6.1",
     "vinyl-ftp": "^0.4.5"
-  },
-  "dependencies": {
-    "jquery-cycle2": "git+https://github.com/malsup/cycle2.git"
   }
 }
