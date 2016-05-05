@@ -1,60 +1,12 @@
+
 .page--home
+  position relative
   min-height 100vh
   background black
   padding 0
 
-.content--home
-  size 100%
-  min-height 100vh
-
-.home-title
-  color white
-  text-align center
-  padding-top 40vh
-  font-weight 300
-  font-size 40px
-  +above(6)
-    font-size 80px
-
-.home-info
-  height 100vh
-  width 100%
-  background-image url('../img/home__text-background.png')
-  bakground-repeat repeat-x
-  background-size auto 100vh
-  text-align center
-  color white
-  font-size 20px
-  letter-spacing 2px
-  padding-top 60vh
-  +above(6)
-    padding-top 70vh
-  +above(8)
-    padding-top 84vh
-  +above(10)
-    font-size 30px
-
-
-
-.home__img
-  width 100%
-  height 100vh
-  background-size cover
-
-.gallery-block
-  vertical-align bottom
-  postion relative
-
-.home-pager
-  font-size 80px
-  color white
-  opacity .5
-  cursor pointer
-
-.cycle-pager-active
-  color main-color
-
-.pager-box
-  position relative
-  z-index 500
-  text-align center
+.overlay
+  absolute 0 false false 0
+  size 100% 100%
+  background overlay
+  display table

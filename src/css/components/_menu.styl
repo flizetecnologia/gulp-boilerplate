@@ -21,22 +21,20 @@
     background main-color
     display none
   +above(12)
-    padding 23px 0px 0px 0px
+    padding 20px 0px 0px 0px
     display block
     float right
 
 .menu__anchor
   alink()
   text-align center
-  font-size 16px
-  font-weight bold
+  font-size 14px
+  font-weight 400
   +below(11)
     display inline-block
     width 100%
     padding 15px 0px
     color white
-    &.menu__anchor--active
-      color white
     &:hover
       background-color darken(main-color, 10)
   +above(12)
@@ -48,5 +46,4 @@
       color main-color
 
 .menu__item--active
-  padding-bottom 4px
   border-bottom 2px solid main-color

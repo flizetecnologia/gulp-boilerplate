@@ -1,22 +1,26 @@
 
 .form
   size 100% false
+  margin auto
   +above(6)
     size 80% false
 
 .form__group
-  padding 0px 0px 10px 0px
+  padding 0px 0px 30px 0px
+
+.form__label
+  color #FFF
 
 .form__input, .form__textarea
+  background none
   size 100%
-  color grayb-color
-  padding 6px
+  padding 8px
   font-family 'Open Sans', sans-serif
   font-size basic-font-size
-  border 2px solid transparent
+  border-bottom 2px solid rgba(255,255,255,0.5)
+  color #FFF
   &:focus
-    border 2px solid blue-color
-    color blue-color
+    border-bottom 2px solid rgba(255,255,255,1)
 
 .form__textarea
   size false 200px

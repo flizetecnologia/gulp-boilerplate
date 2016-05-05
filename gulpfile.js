@@ -20,7 +20,7 @@ var gulp = require('gulp')
 
 var utils = {}
 
-utils.url = 'http://localhost:9000/';
+utils.url = 'http://localhost:9000';
 //utils.url = 'https://webserver.com.br';
 utils.images = utils.url + '/assets/img';
 utils.cover = utils.images + '/cover.jpg';
@@ -36,12 +36,12 @@ var src = './src'
 var scripts = [
   './node_modules/jquery/dist/jquery.min.js'
   , './node_modules/malonebox/dist/js/malonebox.min.js'
+  , './node_modules/jquery-cycle2/build/jquery.cycle2.min.js'
   , src + '/js/onscroll.js'
   , src + '/js/menu.js'
   , src + '/js/form.js'
   , src + '/js/gmaps.js'
   , src + '/js/onload.js'
-  , './node_modules/jquery-cycle2/build/jquery.cycle2.min.js'
 
 ];
 
@@ -96,6 +96,19 @@ gulp.task('js', function() {
     .pipe(connect.reload());
 });
 
+// minify all fontLoader.js
+
+gulp.task('font-js', function() {
+  return gulp.src('src/js/fontLoader.js')
+    .pipe(uglify({
+      mangle: true,
+      outSourceMap: true
+    }))
+    .on('error', nocrash)
+    .pipe(gulp.dest(dist + '/assets/js'))
+    .pipe(connect.reload());
+});
+
 // minify theme images
 
 gulp.task('imagemin', function() {
@@ -124,7 +137,7 @@ gulp.task('copystuffs', function() {
 
 // tasks
 
-gulp.task('server', ['connect', 'ejs', 'css', 'js', 'imagemin', 'copystuffs', 'copyfonts'], function() {
+gulp.task('server', ['connect', 'ejs', 'css',  'font-js', 'js', 'imagemin', 'copystuffs', 'copyfonts'], function() {
 
   gulp.watch(src + '/templates/**/*.ejs', ['ejs']);
   gulp.watch(src + '/css/**/*.styl', ['css']);
@@ -134,7 +147,7 @@ gulp.task('server', ['connect', 'ejs', 'css', 'js', 'imagemin', 'copystuffs', 'c
   console.log('I\'m watching you!');
 });
 
-gulp.task('default', ['ejs', 'ejs', 'css', 'js', 'imagemin', 'copystuffs', 'copyfonts'], function() {
+gulp.task('default', ['ejs', 'ejs', 'css', 'font-js', 'js', 'imagemin', 'copystuffs', 'copyfonts'], function() {
   console.log('Gulp Done!');
 });
 

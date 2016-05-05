@@ -1,33 +1,11 @@
-(function() {
-
-  jQuery(document).scroll(function(event){
-
-    goHome();
-
-  });
-
-  function goHome() {
-
-    var scrollTop = jQuery(window).scrollTop();
-    var windowHeight = jQuery(window).height();
-    windowHeight = windowHeight + 5;
-
-    if(scrollTop > windowHeight) {
-      jQuery('.gohome--js').fadeIn();
-    } else {
-      jQuery('.gohome--js').fadeOut();
-    }
-
-  }
-
-
-})(jQuery);
-
-
-
 
 $(document).ready(function () {
+
+    onScroll();
+    headerBg();
+
     $(document).on("scroll", onScroll);
+    $(document).on("scroll", headerBg);
 
     //smoothscroll
     $('a[href^="#"]').on('click', function (e) {
@@ -47,9 +25,25 @@ $(document).ready(function () {
         }, 500, 'swing', function () {
             window.location.hash = target;
             $(document).on("scroll", onScroll);
+            $(document).on("scroll", headerBg);
         });
     });
+
 });
+
+function headerBg() {
+
+    var scrollTop = jQuery(window).scrollTop();
+    var windowHeight = jQuery(window).height();
+    windowHeight = windowHeight - 90;
+
+    if(scrollTop > 100) {
+      jQuery('.header').addClass('header--scroll');
+    } else {
+      jQuery('.header').removeClass('header--scroll');
+    }
+
+  }
 
 function onScroll(event){
     var scrollPos = $(document).scrollTop();

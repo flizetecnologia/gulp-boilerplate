@@ -1,26 +1,37 @@
 	<section class="page home page--home" id="home">
 
-		<div class="cycle-slideshow gallery-block" data-cycle-timeout="4000" data-cycle-slides="> div" data-cycle-pager=".home-pager">
-			    <div class="home__img" style="background-image:url(<%- utils.url %>/assets/img/slide-1.jpg)">
-			    	<p class="home-info">
-						1 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-					</p>
-			    </div>
+		<div class="cycle-slideshow slideshow"
+			data-cycle-timeout="4000"
+			data-cycle-slides="> .slideshow__slide"
+			data-cycle-pager=".slideshow__nav"
+			data-cycle-pager-template="<span class='slideshow__bullet'></span>">
 
-			    <div class="home__img" style="background-image:url(<%- utils.url %>/assets/img/slide-2.jpg)">
-			    	<p class="home-info">
-						2 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-					</p>
-			    </div>
+		    <div class="slideshow__slide" style="background-image:url(<%- utils.url %>/assets/img/slide-1.jpg)">
+		    	<div class="overlay">
+		    		<h2 class="slideshow__head">
+			    		1 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+			    	</h2>
+		    	</div>
+		    </div>
 
-			    <div class="home__img" style="background-image:url(<%- utils.url %>/assets/img/slide-3.jpg)">
-			    	<p class="home-info">
-						3 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-					</p>
-			    </div>
+		    <div class="slideshow__slide" style="background-image:url(<%- utils.url %>/assets/img/slide-2.jpg)">
+		    	<div class="overlay">
+		    		<h2 class="slideshow__head">
+			    		2 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+			    	</h2>
+		    	</div>
+		    </div>
+
+		    <div class="slideshow__slide" style="background-image:url(<%- utils.url %>/assets/img/slide-3.jpg)">
+		    	<div class="overlay">
+		    		<h2 class="slideshow__head">
+			    		3 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+			    	</h2>
+		    	</div>
+		    </div>
+
 		</div>
-		<div class="pager-box">
-			<div class="home-pager"></div>
-		</div>
+
+		<div class="slideshow__nav"></div>
 
 	</section>

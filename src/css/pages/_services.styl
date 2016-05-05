@@ -1,42 +1,41 @@
-.page--services
-  background rgba(0,0,0,0.8)
-  padding-bottom 0
+.services
+  background alpha(#000, .8)
+  padding 80px 0
 
-.services-box
-  width 100%
-  max-width 960px
-  margin 0 auto
-  +above(8)
-    padding 10px
-    height 300px
-
-
-
-.service__image
-  width 100%
-  height 200px
-  +above(8)
-    size 200px
-    border-radius 50%
-    background-size cover
-    float left
-
-.services__text
-  color white
-  float right
-  font-size 18px
+.services__head
+  font-size 50px
+  font-weight 100
   text-align center
-  padding 10px 20px
-  background-color rgba(0,0,0,0.6)
-  width 100%
+  color #FFF
+  padding 0 0 80px 0
+
+.services__boxes
+  cf()
+
+.services__box
+  col(12/12)
+  padding 30px 30px
+  color #FFF
+
+  +above(4)
+    col(6/12, cycle: 2)
 
   +above(8)
-    background-color rgba(0,0,0,0)
-    padding 60px 0
-    width 60%
-    text-align left
+    col(4/12, uncycle: 2, cycle: 3)
+    padding 0 30px
 
-.content--services
-  +above(8)
-    border-top 1px solid rgba(255,255,255,0.6)
-    padding-top 80px
+.services__title
+  font-weight 100
+  font-size 30px
+  text-align center
+  padding 20px 0
+
+.services__description
+  font-weight 400
+  font-size 16px
+  text-align center
+
+.services__img
+  size 100% false
+  display block
+  border-radius 200px

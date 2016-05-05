@@ -1,24 +1,29 @@
-	<section class="page contact page--contact page--main-color" id="contact">
+	<section class="contact" id="contact">
 
-		<h2 class="page__title title--white">Contact</h2>
+		<h2 class="contact__head">Contact</h2>
 
-		<div class="content">
+		<div class="form">
+			<form action="" method="POST">
 
-			<div class="content__form">
-				<form class="contact__form" action="" method="POST">
-					<label class="contact__label" for="name">Name</label>
-					<input class="form__item" type="text" name="your_name" id="name">
-					<label class="contact__label" for="email">Email</label>
-					<input class="form__item" type="email" name="your_email" id="email">
-					<label class="contact__label" for="message">Message</label>
-					<textarea class="form__item" name="your_message" id="message"></textarea>
-					<div class="btn-box">
-						<button class="contact-btn form__submit form__submit--js">SEND</button>
-					</div>
-				</form>
-			</div>
+				<div class="form__group">
+					<label class="form__label" for="name">Name:</label>
+					<input class="form__input" type="text" name="your_name" id="name">
+				</div>
+				<div class="form__group">
+					<label class="form__label" for="email">Email:</label>
+					<input class="form__input" type="email" name="your_email" id="email">
+				</div>
+				<div class="form__group">
+					<label class="form__label" for="message">Message:</label>
+					<textarea class="form__textarea" name="your_message" id="message"></textarea>
+				</div>
+				<div class="form__group">
+					<button class="form__submit form__submit--js">SEND</button>
+				</div>
 
+			</form>
 		</div>
+
 		<div class="contact__map">
 			<div class="gmaps gmaps--js" data-latitude="-25.099699" data-longitude="-50.159082" data-title="Mapa" data-pin="<%- utils.url %>assets/img/pin.png"></div>
 		</div>

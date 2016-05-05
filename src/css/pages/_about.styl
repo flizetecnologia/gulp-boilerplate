@@ -1,16 +1,46 @@
-.content__block
-  width 100%
-  height 200px
+
+.about
+  background #FFF
+  padding 20px 0
+  +above(6)
+    padding 80px 0
+
+.about__head
+  font-size 50px
+  font-weight 100
   text-align center
+  color main-color
+
+.about__boxes
+  cf()
+  padding 80px 0 0 0
+
+.about__box
+  size false 200px
+  text-align center
+
   +above(6)
     col(1/2, cycle: 2, gutter: 2)
 
   +above(8)
     col(1/4, uncycle: 2, cycle: 4, gutter: 2)
 
-.page--about
-  padding-bottom 160px
-  min-height 100vh
+.about__icon
+  color main-color
+  font-size 40px
+  width 100%
+  text-align center
+  padding 10px
 
-.content--about
-  padding-top 100px
+.about__title
+  font-size 30px
+  text-align center
+  padding-bottom 10px
+  font-weight 100
+
+.about__description
+  text-align center
+  font-size 16px
+  font-weight 400
+  color secondary-font-color
+
