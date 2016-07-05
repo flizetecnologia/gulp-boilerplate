@@ -23,7 +23,7 @@
     "gulp-stylus": "^2.1.0",
     "gulp-uglifyjs": "^0.6.2",
     "gulp-util": "^3.0.7",
-    "jeet": "^6.1.2",
+    "jeet": "6.1.2",
     "jquery": "^2.1.4",
     "jquery-cycle2": "git+https://github.com/malsup/cycle2.git",
     "kouto-swiss": "^0.11.13",

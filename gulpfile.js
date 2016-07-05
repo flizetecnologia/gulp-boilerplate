@@ -165,7 +165,8 @@ gulp.task( 'deploy_br', ['ejs', 'css', 'js', 'imagemin', 'copystuffs', 'copyfont
         host:     'host.com.br',
         user:     'username',
         password: 'password',
-        parallel: 10,
+        parallel: 3,
+        maxConnections: 2,
         log:      gutil.log
     } );
 
